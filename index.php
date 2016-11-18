@@ -18,7 +18,7 @@ header("Access-Control-Allow-Headers: *");
 	$( document ).ready(function() {
 		$.get("https://4d92e694-a8fa-4131-b83e-1d666c66aed6:zJdWIlmdxS@twcservice.mybluemix.net/api/weather/v1/geocode/44.4833814/-88.1303748/forecast/hourly/48hour.json?units=m&language=en-US",function(data){
 			//console.log(data); 
-			$("#message2").html("It's currently " + data.forecasts[0].golf_category);
+			$("#message2").html("It's currently <strong style='text-transform: lowercase;'>" + data.forecasts[0].golf_category + "</strong> for golf.");
 		});
 		$("#start").click(function(){
 			$("#phase1").slideUp("slow").promise($("#phase2").slideDown("slow"));
@@ -63,7 +63,7 @@ header("Access-Control-Allow-Headers: *");
 	<div id="phase3">
 		<h1>Okay!</h1>
 		<p>Overall, here are some insights about your current situation</p>
-		<div id="results"></div>
+		<div id="wethink"></div>
 		<em>Give it another go! <a href="/">Click here!</a></em>
 	</div>
 </body>
