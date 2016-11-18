@@ -22,7 +22,7 @@
 				</td>
 				<td>
 					<h1 id = "message">Get Started On Your Future Today</h1>
-					<p class='description'></p>When you are ready <span id="start" class="blue">you should click here</span>.
+					<p class='description'>When you are ready <a id="start" class="blue">you should click here</a>.</p>
 				</td>
 			</tr>
 		</table>
